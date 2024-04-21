@@ -1,0 +1,30 @@
+<% include ./partials/header.ejs%>
+   <div class="h-screen w-full bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1454117096348-e4abbeba002c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFic3RyYWN0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D')] flex items-center justify-center">
+      <div class=" h-[38rem] w-[23rem] bg-gray-300 border-4 border-[#C5C5C5] px-10 py-3 rounded-2xl flex items-center flex-col">
+         <div class="w-full h-8 flex justify-center">
+            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/pinterest_logo_icon_147250.png" alt="" class="h-full ">
+         </div>
+         <h1 class="font-semibold text-2xl mt-2">Welcome to Printerest</h1>
+         <h3 class="mt-1">Find new idea to try</h3>
+         <form action="/register" method="post">
+            <h3 class="mt-4 ml-5">Name</h3>
+            <input type="text" name="name" id="" placeholder="Enter Name" class="w-[15rem] h-10  border-2 p-2 rounded-lg border-zinc-400 ml-4 bg-zinc-200 border-1">
+            <h3 class="mt-2 ml-5">Username</h3>
+            <input type="text" name="username" id="" placeholder="Enter Username" class="w-[15rem] h-10  border-2 p-2 rounded-lg border-zinc-400 ml-4 bg-zinc-200 border-1">
+            <h3 class="mt-2 ml-5">Email</h3>
+            <input type="email" name="email" id="" placeholder="Enter Email" class="w-[15rem] h-10  border-2 p-2 rounded-lg border-zinc-400 ml-4 bg-zinc-200 border-1">
+            <h3 class="mt-2 ml-5">Password</h3>
+            <input type="password" name="password" id="" placeholder="Enter Password" class="w-[15rem] h-10  border-2 p-2 rounded-lg border-zinc-400 ml-4 bg-zinc-200 border-1">
+            <input type="submit" value="Continue" class=" mt-4 ml-4 cursor-pointer w-[15rem] bg-red-600 px-10 py-2 rounded-full font-semibold text-[16px] text-white">
+         </form>
+         <div class="w-[18rem] h-14 mt-3 ">
+            <p class="text-[12px] text-center text-zinc-700">By continuing, you agree to Pinterest's <br> <strong><a href="">Terms of Service</a></strong> and acknowledge you've read our <br> <strong><a href="">Privacy Policy. Notice at collection </a></strong></p>
+         </div>
+         <div class="w-[10rem] mt-3 h-[1px] bg-gray-400"></div>
+         <div class="flex gap-1">
+          <p class="text-[13px] text-zinc-700 mt-3 font-medium">Already a member? </p> <a href="/login" class="font-bold text-[13px] text-zinc-700 mt-3"> Log in</a></p>
+         </div>
+
+      </div>
+   </div>
+<% include ./partials/footer.ejs%>
